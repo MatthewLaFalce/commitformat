@@ -1,0 +1,36 @@
+{
+  "name": "commitformat",
+  "version": "127.0.0.1",
+  "description": "Git commit message convention guide",
+  "main": "/bin/commitformat.js",
+  "bin": {
+    "commitformat": "./bin/commitformat.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MatthewLaFalce/commitformat.git"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/commitformat.js",
+    "lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Matthew LaFalce",
+    "email": "mlafalce206@gmail.com",
+    "url": "https://mattlafalce.me"
+  },
+  "license": "MIT",
+  "files": [
+    "bin/commitformat.js",
+    "bin/output"
+  ],
+  "dependencies": {
+    "ansi-regex": ">=5.0.1",
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.2",
+    "standard": "^12.0.1"
+  }
+}

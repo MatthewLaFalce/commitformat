@@ -13,4 +13,3 @@ npm run build
 # Build and run the package
 npm run dev
 ```
-# commitformat
